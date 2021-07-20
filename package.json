@@ -1,0 +1,16 @@
+{
+  "name": "test-content",
+  "version": "1.0.0",
+  "description": "tests content-generator api",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "api-test": "newman run test/api-test-content-generator.postman_collection.json"
+  },
+  "author": "Gabriel Godoy",
+  "dependencies": {
+    "newman": "^5.2.4"
+  }
+}

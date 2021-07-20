@@ -1,0 +1,1061 @@
+{
+	"info": {
+		"_postman_id": "b70ee53a-da09-422e-861a-9071e55f546b",
+		"name": "api-test-content-generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v3/RecommendationMail",
+			"item": [
+				{
+					"name": "Request:  /v3/RecommendationMail UBPE: PERU URBANIA (UB) 60664216",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=UBPE&user_id=60664216&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "UBPE"
+								},
+								{
+									"key": "user_id",
+									"value": "60664216"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail ZPAR: ARGENTINA (AR)  32070798",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=ZPAR&user_id=32070798&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "ZPAR"
+								},
+								{
+									"key": "user_id",
+									"value": "32070798"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail PLEC: ECUADOR (EC) 51374349",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=PLEC&user_id=51374349&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "PLEC"
+								},
+								{
+									"key": "user_id",
+									"value": "51374349"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail 24MX: MEXICO (MX) 9505",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=24MX&user_id=9505 &mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "24MX"
+								},
+								{
+									"key": "user_id",
+									"value": "9505 "
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail IWBR: BRASIL (BR) 10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=IWBR&user_id=10&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "IWBR"
+								},
+								{
+									"key": "user_id",
+									"value": "10"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail CAPA: PANAMA (PA)  51458320",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=CAPA&user_id=51458320&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "CAPA"
+								},
+								{
+									"key": "user_id",
+									"value": "51458320"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail  DVPE: PERU (PE)  54421822",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=DVPE&user_id=54421822&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "DVPE"
+								},
+								{
+									"key": "user_id",
+									"value": "54421822"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request:  /v3/RecommendationMail  WIBR: BRASILIA (BR) 10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v3/RecommendationMail?site_id=DVPE&user_id=54421822&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v3",
+								"RecommendationMail"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "DVPE"
+								},
+								{
+									"key": "user_id",
+									"value": "54421822"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/v2/DevelopmentNewsletter",
+			"item": [
+				{
+					"name": "Request: UBPE: PERU URBANIA (UB) 60664216",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=UBPE&user_id=60664216&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "UBPE"
+								},
+								{
+									"key": "user_id",
+									"value": "60664216"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: ZPAR: ARGENTINA (AR)  32070798",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=ZPAR&user_id=32070798&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "ZPAR"
+								},
+								{
+									"key": "user_id",
+									"value": "32070798"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: PLEC: ECUADOR (EC) 51374349",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=PLEC&user_id=51374349&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "PLEC"
+								},
+								{
+									"key": "user_id",
+									"value": "51374349"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: 24MX: MEXICO (MX) 9505",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=24MX&user_id=9505&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "24MX"
+								},
+								{
+									"key": "user_id",
+									"value": "9505"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: CAPA: PANAMA (PA)  51458320",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=CAPA&user_id=51458320&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "CAPA"
+								},
+								{
+									"key": "user_id",
+									"value": "51458320"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: IWBR: BRASIL (BR) 10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=CAPA&user_id=51458320&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "CAPA"
+								},
+								{
+									"key": "user_id",
+									"value": "51458320"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: DVPE: PERU (PE)  54421822 Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=CAPA&user_id=51458320&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "CAPA"
+								},
+								{
+									"key": "user_id",
+									"value": "51458320"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request: WIBR: BRASILIA (BR) 10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"No empty data\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.value).to.be.not.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string -> not include status: 777\", function () {\r",
+									"    pm.expect(pm.response.text()).to.not.include('\"status\"'+\":\"+777);\r",
+									"});\r",
+									"\r",
+									" pm.test(\"Body matches string -> status: 0\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"status\"'+\":\"+0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://content-generator.stg.rsbts.spec.re.navent.biz:8080/v2/DevelopmentNewsletter?site_id=CAPA&user_id=51458320&mail_id=null",
+							"protocol": "http",
+							"host": [
+								"content-generator",
+								"stg",
+								"rsbts",
+								"spec",
+								"re",
+								"navent",
+								"biz"
+							],
+							"port": "8080",
+							"path": [
+								"v2",
+								"DevelopmentNewsletter"
+							],
+							"query": [
+								{
+									"key": "site_id",
+									"value": "CAPA"
+								},
+								{
+									"key": "user_id",
+									"value": "51458320"
+								},
+								{
+									"key": "mail_id",
+									"value": "null"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
