@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-test": "newman run test/api-test-content-generator.postman_collection.json"
+    "api-test": "newman run tests/api-test-content-generator.postman_collection.json"
   },
   "author": "Gabriel Godoy",
   "dependencies": {
